@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Form Page</title>
+		<style>
+		form * {
+			margin: 10px;
+		}
+		form {
+			width: 440px; height: 280px; border: solid 2px black !important;
+		}
+		.center {
+			margin-left:auto; margin-right:auto;
+		}
+		.center-inside {
+			display: flex;
+			justify-content: center;
+  			align-items: center;
+		}
+		</style>
+	</head>
+	<body>
+			<form class="center" action="register" method="POST">
+				<label>Enter name:</label> <input type="text" name="name" placeholder="Enter name" required><br>  
+	        	<label>Enter password:</label> <input type="password" name="password" required><br>
+				<label>Enter email:</label> <input type="text" name="email" placeholder="Enter email" required><br>  
+				<label>Select gender:</label> <input type="radio" name="gender" value="Male" checked/>Male <input type="radio" name="gender" value="Female"/>Female<br>  
+				<label>Select course:</label><select name="course" required><option value="Maths">Maths</option><option value="Physics">Physics</option><option value="Arts">Arts</option></select><br> 
+				<input type="checkbox" name="tos" />I agree to the terms of service. <br>
+				<div class="center-inside"><input type="submit" /> <input type="reset"></div>
+			</form>
+	</body>
+</html>
